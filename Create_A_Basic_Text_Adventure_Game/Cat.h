@@ -1,9 +1,13 @@
 #pragma once
-using namespace std;
-class Item
+#include "Item.h"
+class Cat
 {
+public:
+	Cat();
 public:
 	virtual void Description() const;
 	virtual void Use();
+private:
+	bool purring;
 };
 
