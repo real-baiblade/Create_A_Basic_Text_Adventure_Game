@@ -10,6 +10,6 @@ public:
 public:
 	bool FindSpell(String spell);
 private:
-	list<String> spells = { "Eclipse", "Eruption", "Frostbite", "Levitate", "Mirage", "Petrify", "Polymorph", "Teleport", "Thunderwave", "Vortex" };
+	String spells[10] = {"Eclipse", "Eruption", "Frostbite", "Levitate", "Mirage", "Petrify", "Polymorph", "Teleport", "Thunder", "Vortex"};
 };
 
