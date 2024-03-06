@@ -9,7 +9,10 @@ public:
 public:
 	void Run();
 private:
-	Player* player;
-	Room rooms[5][5];
+	String Descripts[3][3] = { 
+		{"a", "b", "c"}, // change these descriptions
+		{"d", "e", "f"},
+		{"g", "h", "i"} 
+	};
 };
 

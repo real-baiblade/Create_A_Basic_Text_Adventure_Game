@@ -9,7 +9,8 @@ Room::Room(String description, Item* item) {
 }
 
 Room::~Room() {
-
+	item = nullptr;
+	delete item;
 }
 
 void Room::Description() const {

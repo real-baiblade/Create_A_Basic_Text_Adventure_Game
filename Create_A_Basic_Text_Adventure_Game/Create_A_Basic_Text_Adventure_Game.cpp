@@ -3,8 +3,6 @@
 
 #include <iostream>
 #include "String.h"
-#include "Player.h"
-#include "Room.h"
 #include "Game.h"
 
 using namespace std;
