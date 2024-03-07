@@ -16,6 +16,9 @@ void Game::Run() {
 	int playerX = 1;
 	int playerY = 1;
 	Item* item = nullptr;
+	Lamp* lamp = new Lamp();
+	BoxOfDonuts* box = new BoxOfDonuts();
+	Cat* cat = new Cat();
 
 	cout << "Enter a command. Press 'Q' to exit. \n Please concatenate your command into 1 word." << endl;
 	cin >> input;
@@ -31,13 +34,13 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = new Lamp();
+				item = lamp;
 			}
 			else if (playerX == 1 && playerY == 2) {
-				item = nullptr; // change this
+				item = box; 
 			}
 			else if (playerX == 2 && playerY == 1) {
-				item = nullptr; // change this
+				item = cat;
 			}
 			Room current(Descripts[playerX][playerY], item);
 			current.Description();
@@ -49,13 +52,13 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = new Lamp();
+				item = lamp;
 			}
 			else if (playerX == 1 && playerY == 2) {
-				item = nullptr; // change this
+				item = box;
 			}
 			else if (playerX == 2 && playerY == 1) {
-				item = nullptr; // change this
+				item = cat;
 			}
 			Room current(Descripts[playerX][playerY], item);
 			current.Description();
@@ -67,13 +70,13 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = new Lamp();
+				item = lamp;
 			}
 			else if (playerX == 1 && playerY == 2) {
-				item = nullptr; // change this
+				item = box;
 			}
 			else if (playerX == 2 && playerY == 1) {
-				item = nullptr; // change this
+				item = cat;
 			}
 			Room current(Descripts[playerX][playerY], item);
 			current.Description();
@@ -85,13 +88,13 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = new Lamp();
+				item = lamp;
 			}
 			else if (playerX == 1 && playerY == 2) {
-				item = nullptr; // change this
+				item = box;
 			}
 			else if (playerX == 2 && playerY == 1) {
-				item = nullptr; // change this
+				item = cat;
 			}
 			Room current(Descripts[playerX][playerY], item);
 			current.Description();

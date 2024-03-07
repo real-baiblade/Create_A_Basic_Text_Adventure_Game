@@ -1,6 +1,7 @@
 #pragma once
 #include "Item.h"
-class Cat
+#include <iostream>
+class Cat : public Item
 {
 public:
 	Cat();
