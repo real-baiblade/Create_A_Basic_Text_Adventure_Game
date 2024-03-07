@@ -31,7 +31,7 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = nullptr; // change this
+				item = new Lamp();
 			}
 			else if (playerX == 1 && playerY == 2) {
 				item = nullptr; // change this
@@ -49,7 +49,7 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = nullptr; // change this
+				item = new Lamp();
 			}
 			else if (playerX == 1 && playerY == 2) {
 				item = nullptr; // change this
@@ -67,7 +67,7 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = nullptr; // change this
+				item = new Lamp();
 			}
 			else if (playerX == 1 && playerY == 2) {
 				item = nullptr; // change this
@@ -85,7 +85,7 @@ void Game::Run() {
 			}
 			item = nullptr;
 			if (playerX == 0 && playerY == 0) {
-				item = nullptr; // change this
+				item = new Lamp();
 			}
 			else if (playerX == 1 && playerY == 2) {
 				item = nullptr; // change this
@@ -105,15 +105,7 @@ void Game::Run() {
 		}
 		else if (command.ToLower().EqualTo("use") == true) {
 			if (item != nullptr) {
-				if (item == nullptr) { // change this
-
-				}
-				else if (item == nullptr) { // change this
-
-				}
-				else if (item == nullptr) { // change this
-
-				}
+				item->Use();
 			}
 		}
 	}

@@ -1,6 +1,9 @@
 #pragma once
 #include "Player.h"
 #include "Room.h"
+#include "Lamp.h"
+#include "BoxOfDonuts.h"
+#include "Cat.h"
 class Game
 {
 public:
