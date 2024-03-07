@@ -1,5 +1,6 @@
 #pragma once
 #include "Item.h"
+#include <iostream>
 class Lamp : public Item
 {
 public:
