@@ -5,7 +5,7 @@ Cat::Cat() {
 }
 
 void Cat::Description() const {
-
+	cout << "Walking around the room is a medium sized tabby coloured cat. It is circling the room around you." << endl;
 }
 
 void Cat::Use() {

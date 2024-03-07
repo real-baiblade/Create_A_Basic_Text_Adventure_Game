@@ -28,8 +28,6 @@ String::String(const char* _str) {
 		strcpy(str, _str);
 		str[strlen(_str)] = '\0';
 
-		cout << "The string passed is : " << str << endl;
-
 		temp = new char[1];
 		temp[0] = '\0';
 		at_index = new char[1];
