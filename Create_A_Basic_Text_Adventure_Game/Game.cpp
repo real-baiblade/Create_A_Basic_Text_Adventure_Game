@@ -11,8 +11,7 @@ Game::~Game() {
 }
 
 void Game::Run() {
-	char input[40];
-	String command;
+	String command = String();
 	int playerX = 1;
 	int playerY = 1;
 	Item* item = nullptr;
@@ -21,7 +20,6 @@ void Game::Run() {
 	Cat* cat = new Cat();
 
 	cout << "Enter a command. Press 'Q' to exit. \n Please concatenate your command into 1 word." << endl;
-	cin >> input;
 	command.ReadFromConsole();
 	while (command.ToLower().EqualTo("q") == false) {
 		if (command.ToLower().EqualTo("q") == true) {
@@ -101,7 +99,6 @@ void Game::Run() {
 		}
 		else if (command.ToLower().EqualTo("spell") == true) {
 			cout << "Enter the name of the spell you wish to find." << endl;
-			cin >> input;
 			command.ReadFromConsole();
 			Player player;
 			player.FindSpell(command);
@@ -111,5 +108,7 @@ void Game::Run() {
 				item->Use();
 			}
 		}
+		cout << "Enter a command. Press 'Q' to exit." << endl;
+		command.ReadFromConsole();
 	}
 }
