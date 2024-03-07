@@ -15,4 +15,7 @@ Room::~Room() {
 
 void Room::Description() const {
 	cout << description.CStr() << endl;
+	if (item != nullptr) {
+		item->Description();
+	}
 }
