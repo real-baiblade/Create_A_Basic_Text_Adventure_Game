@@ -7,9 +7,9 @@
 
 using namespace std;
 
-int main()
-{
-    
+int main() {
+    Game game;
+    game.Run();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

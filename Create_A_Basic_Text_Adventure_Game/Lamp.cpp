@@ -5,7 +5,12 @@ Lamp::Lamp() {
 }
 
 void Lamp::Description() const {
-
+	if (turnedOn == true) {
+		cout << "The room contains a small desk lamp. It sits in the corner of the room on a small table. The light is currently off." << endl;
+	}
+	else {
+		cout << "The room contains a small desk lamp. It sits in the corner of the room on a small table. The light is currently on, and it illuminates the room." << endl;
+	}
 }
 
 void Lamp::Use() {
